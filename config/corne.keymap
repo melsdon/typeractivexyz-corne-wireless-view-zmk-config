@@ -67,10 +67,10 @@
 
         colemak-dh {
             bindings = <
-&gresc     &kp Q  &kp W  &kp F   &kp P   &kp B        &kp J      &kp L   &kp U      &kp Y    &kp SEMI  &kp BSLH
-&kp TAB    &kp A  &kp R  &kp S   &kp T   &kp G        &kp M      &kp N   &kp E      &kp I    &kp O     &kp APOS
-&kp LSHFT  &kp Z  &kp X  &kp C   &kp D   &kp V        &kp K      &kp H   &kp COMMA  &kp DOT  &kp FSLH  &kp LSHFT
-                         &trans  &trans  &kp SPACE    &kp ENTER  &trans  &trans
+&gresc     &kp Q         &kp W         &kp F          &kp P          &kp B        &kp J      &kp L          &kp U          &kp Y         &kp SEMI      &kp BSLH
+&kp TAB    &lhrm LCMD A  &lhrm LALT R  &lhrm LCTRL S  &lhrm LSHFT T  &kp G        &kp M      &rhrm RSHFT N  &rhrm RCTRL E  &rhrm RALT I  &rhrm RCMD O  &kp APOS
+&kp LSHFT  &kp Z         &kp X         &kp C          &kp D          &kp V        &kp K      &kp H          &kp COMMA      &kp DOT       &kp FSLH      &kp LSHFT
+                                       &trans         &trans         &kp SPACE    &kp ENTER  &trans         &trans
             >;
         };
     };
