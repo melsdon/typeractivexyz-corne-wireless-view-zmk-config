@@ -58,19 +58,37 @@
 
         qwerty {
             bindings = <
-&gresc     &kp Q         &kp W         &kp E          &kp R          &kp T        &kp Y      &kp U          &kp I          &kp O         &kp P            &kp BSLH
-&kp TAB    &lhrm LCMD A  &lhrm LALT S  &lhrm LCTRL D  &lhrm LSHFT F  &kp G        &kp H      &rhrm RSHFT J  &rhrm RCTRL K  &rhrm RALT L  &rhrm RCMD SEMI  &kp APOS
-&kp LSHFT  &kp Z         &kp X         &kp C          &kp V          &kp B        &kp N      &kp M          &kp COMMA      &kp DOT       &kp FSLH         &kp RSHFT
-                                       &trans         &trans         &kp SPACE    &kp ENTER  &trans         &trans
+&gresc     &kp Q         &kp W         &kp E          &kp R          &kp T          &kp Y        &kp U          &kp I          &kp O         &kp P            &kp BSLH
+&kp TAB    &lhrm LGUI A  &lhrm LALT S  &lhrm LCTRL D  &lhrm LSHFT F  &kp G          &kp H        &rhrm RSHFT J  &rhrm RCTRL K  &rhrm RALT L  &rhrm RCMD SEMI  &kp APOS
+&kp LSHFT  &kp Z         &kp X         &kp C          &kp V          &kp B          &kp N        &kp M          &kp COMMA      &kp DOT       &kp FSLH         &kp RSHFT
+                                       &trans         &trans         &lt 2 SPACE    &lt 3 ENTER  &trans         &trans
             >;
         };
 
         colemak-dh {
             bindings = <
-&gresc     &kp Q         &kp W         &kp F          &kp P          &kp B        &kp J      &kp L          &kp U          &kp Y         &kp SEMI      &kp BSLH
-&kp TAB    &lhrm LCMD A  &lhrm LALT R  &lhrm LCTRL S  &lhrm LSHFT T  &kp G        &kp M      &rhrm RSHFT N  &rhrm RCTRL E  &rhrm RALT I  &rhrm RCMD O  &kp APOS
-&kp LSHFT  &kp Z         &kp X         &kp C          &kp D          &kp V        &kp K      &kp H          &kp COMMA      &kp DOT       &kp FSLH      &kp LSHFT
-                                       &trans         &trans         &kp SPACE    &kp ENTER  &trans         &trans
+&gresc     &kp Q         &kp W         &kp F          &kp P          &kp B          &kp J        &kp L          &kp U          &kp Y         &kp SEMI      &kp BSLH
+&kp TAB    &lhrm LGUI A  &lhrm LALT R  &lhrm LCTRL S  &lhrm LSHFT T  &kp G          &kp M        &rhrm RSHFT N  &rhrm RCTRL E  &rhrm RALT I  &rhrm RGUI O  &kp APOS
+&kp LSHFT  &kp Z         &kp X         &kp C          &kp D          &kp V          &kp K        &kp H          &kp COMMA      &kp DOT       &kp FSLH      &kp LSHFT
+                                       &trans         &trans         &lt 2 SPACE    &lt 3 ENTER  &trans         &trans
+            >;
+        };
+
+        num {
+            bindings = <
+&trans  &trans    &trans        &trans     &trans     &trans    &trans  &kp N7  &kp N8   &kp N9  &trans  &trans
+&trans  &kp LCMD  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &trans    &trans  &kp N4  &kp N5   &kp N6  &trans  &trans
+&trans  &trans    &trans        &trans     &trans     &trans    &trans  &kp N1  &kp N2   &kp N3  &trans  &trans
+                                &trans     &trans     &trans    &trans  &kp N0  &kp DOT
+            >;
+        };
+
+        nav {
+            bindings = <
+&trans  &kp SCROLLLOCK  &mt LC(HOME) UP   &kp INSERT     &kp PG_UP  &trans    &trans  &trans     &trans     &trans    &trans    &trans
+&trans  &mt HOME LEFT   &mt LC(END) DOWN  &mt END RIGHT  &kp PG_DN  &trans    &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &trans
+&trans  &trans          &trans            &trans         &trans     &trans    &trans  &trans     &trans     &trans    &trans    &trans
+                                          &trans         &trans     &trans    &trans  &trans     &trans
             >;
         };
     };
